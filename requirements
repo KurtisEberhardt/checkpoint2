@@ -1,0 +1,24 @@
+
+## Requirements: 
+- [X] User can click on an image to generate a resource 
+- [ ] Users have an up-to-date count of their resources 
+- [ ] Users have at least 4 upgrades to purchase 
+- [ ] Users can see how many of each resource they have and the amount of modification that resource provides 
+- [ ] At least 1 click upgrade and 1 automatic upgrade 
+- [ ] Automatic upgrades are applied at least every 3 seconds, and the screen is updated to reflect this change 
+- [ ] Users cannot purchase an upgrade if they do not have the resources 
+- [ ] Purchasing an upgrade decreases the resource automatically 
+- [ ] Upgrades have different modifier values 
+- [ ] When a user buys an upgrade, the price of the upgrade goes up 
+
+ 
+## Stretch Goals: 
+- [ ] Instead of a basic count, use images or icons to represent how many of a purchasable the user has 
+- [ ] Prevent the user from writing a loop to click by setting a 'cooldown' between clicks 
+- [ ] Disable the buttons a user cannot purchase and enable them if they have enough money 
+- [ ] Unlock/hide upgrades until the user has enough resources at least once to afford the item 
+- [ ] Consider how you could add bonuses that could increase the multiplier of `automaticUpgrades` 
+- [ ] Try using localstorage to save your game progress between page reloads 
+- [ ] Create a badge system to mark user milestones ex. award 'The Collector' for mining 1,000,000 total Cheese 
+- [ ] Create a way to decrease the interval of automaticCollection 
+- [ ] revent the collectionInterval from being started more than once 
