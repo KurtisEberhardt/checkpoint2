@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="sweetalert2.min.css">
 
 </head>
 
@@ -36,19 +35,44 @@
                 <div class="col-4"></div>
             </div>
             <div class="row">
+                <!--buy active items-->
                 <div class="col-12 text-center">
-                    <button class="btn btn-primary m-3" onclick="buy('woodenSword')">Wooden Sword</button>
-                    <button class="btn btn-primary m-3" onclick="buy('kokiriSword')">Kokiri Sword</button>
-                    <button class="btn btn-primary m-3" onclick="buy('masterSword')">Master Sword</button>
-                    <button class="btn btn-primary m-3" onclick="buy('biggoronSword')">Biggoron Sword</button>
+                    <button class="btn btn-primary m-3" onclick="buy('woodenSword')">Wooden
+                        Sword
+                        <p id="woodenSword">0</p>
+                    </button>
+                    <button class="btn btn-primary m-3" onclick="buy('kokiriSword')">Kokiri
+                        Sword
+                        <p id="kokiriSword">0</p>
+                    </button>
+                    <button class="btn btn-primary m-3" onclick="buy('masterSword')">Master
+                        Sword
+                        <p id="masterSword">0</p>
+                    </button>
+                    <button class="btn btn-primary m-3" onclick="buy('biggoronSword')">Biggoron
+                        Sword
+                        <p id="biggoronSword">0</p>
+                    </button>
                 </div>
             </div>
             <div class="row">
+                <!--buy passive items-->
                 <div class="col-12 text-center">
-                    <button class="btn btn-primary m-3" onclick="buyPassive('goronBracelet')">Goron Bracelet</button>
-                    <button class="btn btn-primary m-3" onclick="buyPassive('bombs')">Bombs</button>
-                    <button class="btn btn-primary m-3" onclick="buyPassive('bunnyHood')">Bunny Hood</button>
-                    <button class="btn btn-primary m-3" onclick="buyPassive('powderKeg')">Powder Keg</button>
+                    <button class="btn btn-primary m-3" onclick="buyPassive('goronBracelet')">Goron
+                        Bracelet
+                        <p id="goronBracelet">0</p>
+                    </button>
+                    <button class="btn btn-primary m-3" onclick="buyPassive('bombs')">Bombs
+                        <p id="bombs">0</p>
+                    </button>
+                    <button class="btn btn-primary m-3" onclick="buyPassive('bunnyHood')">Bunny
+                        Hood
+                        <p id="bunnyHood">0</p>
+                    </button>
+                    <button class="btn btn-primary m-3" onclick="buyPassive('powderKeg')">Powder
+                        Keg
+                        <p id="powderKeg">0</p>
+                    </button>
                 </div>
             </div>
         </div>
@@ -73,7 +97,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="sweetalert2.all.min.js"></script>
     <script src="app.js"></script>
 </body>
 

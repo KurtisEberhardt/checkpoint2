@@ -56,8 +56,8 @@ function buy(key){
     let upgrade = clickUpgrades[key].price
     if(totalRupees>=upgrade){
         clickUpgrades[key].quantity++
-        totalRupees-=upgrade
-        updateActives(key)
+        totalRupees -= upgrade
+        updateActive(key)
     }else window.alert("Not enough rupees!")
 }
 function buyPassive(key){
@@ -65,7 +65,7 @@ function buyPassive(key){
     if(totalRupees>=pupgrade){
         passiveUpgrades[key].quantity++
         totalRupees -= pupgrade
-        updatePassives(key)
+        updatePassive(key)
     }else window.alert("Not enough rupees!")
 }
 // TODO figure out sweet alerts 
@@ -75,19 +75,33 @@ function mineRupees(){
         let item = clickUpgrades[key]
         totalRupees += item.multiplier * item.quantity
     }
-    document.getElementById('rupeeCount').innerText = totalRupees.toString()
+    updateRupees()
 }
-function updatePassives(pitem){
-    document.getElementById(pitem).innerText = passiveUpgrades[pitem].Quantity.toString()
+function updatePassive(pitem){
+    document.getElementById(`${pitem}`).innerText = passiveUpgrades[pitem].quantity.toString()
+    updateRupees()
 }
 
-function updateActives(item){
-    document.getElementById(item).innerText = clickUpgrades[item].Quantity.toString()
+function updateActive(item) {
+    document.getElementById(`${item}`).innerText = clickUpgrades[item].quantity.toString()
+    updateRupees()
+}
+
+function updateRupees() {
+    document.getElementById('rupeeCount').innerText = totalRupees.toString()
+}
+
+function collectPassives() {
+        for (let key in passiveUpgrades) {
+        let item = passiveUpgrades[key]
+        totalRupees += item.Multiplier * item.Quantity
+    }
+    updateRupees()
 }
 
     //TODO research update function with for loop
 function startInterval(){
-    collectionInterval = setInterval(collectPassiveUpgrades, 2000)
-    updateInterval = setInterval(update, 1000)
+    collectionInterval = setInterval(collectPassives, 2000)
 }
+startInterval()
 
