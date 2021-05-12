@@ -94,7 +94,6 @@ function updateRupees() {
 function collectPassives() {
         for (let key in passiveUpgrades) {
             let item = passiveUpgrades[key]
-            console.log(item.multiplier)
         totalRupees += item.multiplier * item.quantity
     }
     updateRupees()
