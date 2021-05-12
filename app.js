@@ -93,15 +93,16 @@ function updateRupees() {
 
 function collectPassives() {
         for (let key in passiveUpgrades) {
-        let item = passiveUpgrades[key]
-        totalRupees += item.Multiplier * item.Quantity
+            let item = passiveUpgrades[key]
+            console.log(item.multiplier)
+        totalRupees += item.multiplier * item.quantity
     }
     updateRupees()
 }
 
     //TODO research update function with for loop
 function startInterval(){
-    collectionInterval = setInterval(collectPassives, 2000)
+    collectionInterval = setInterval(collectPassives, 3000)
 }
 startInterval()
 
