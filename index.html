@@ -14,71 +14,70 @@
 
 </head>
 
-<body>
+<body class="bg-success">
     <header>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 bg-success p-4 text-white text-center">
+                <div id="header" class="col-12 bg-success p-4 text-white text-center">
                     <h1>Link's Rupee Clicker</h1>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <div class="container-fluid bg-color">
+        <div id="body" class="container-fluid bg-color">
             <div class="row">
                 <div class="col-1"></div>
                 <div class="col-3 mt-3">
                     <h1 class="ml-3">Actives:</h1>
-                    <button class="btn btn-success btn-block m-3" onclick="buy('woodenSword')">Wooden
-                        Sword :
+                    <button class="btn btn-success btn-block m-3" onclick="buy('woodenSword')">
+                        Wooden Sword :
                         <span id="woodenSword">0</span>
-                        <p>------------------------------------------------------------------</p>
+                        <p>-----------------------------------------------------------------</p>
                         <span>Price: 25 Rupees || Multiplier: +1 Rupee per Click</span>
                     </button>
                     <button class="btn btn-success btn-block m-3" onclick="buy('kokiriSword')">Kokiri
                         Sword : <span id="kokiriSword">0</span>
-                        <p>------------------------------------------------------------------</p>
+                        <p>-----------------------------------------------------------------</p>
                         <span>Price: 50 Rupees || +5 Rupees per Click</span>
 
                     </button>
                     <button class="btn btn-success btn-block m-3" onclick="buy('masterSword')">Master
                         Sword <span id="masterSword">0</span>
-                        <p>------------------------------------------------------------------</p>
+                        <p>-----------------------------------------------------------------</p>
                         <span>Price: 75 Rupees || +7 Rupees per Click</span>
                     </button>
                     <button class="btn btn-success btn-block m-3" onclick="buy('biggoronSword')">Biggoron
                         Sword <span id="biggoronSword">0</span>
-                        <p>------------------------------------------------------------------</p>
+                        <p>-----------------------------------------------------------------</p>
                         <span>Price: 100 Rupees || +10 Rupees per Click</span>
-
                     </button>
                 </div>
                 <div class="col-4">
-                    <img src="https://i.imgur.com/uy7nH4C.png" alt="rupee.jpg" onclick=mineRupees()>
+                    <img id="rupee" src="https://i.imgur.com/3G28QiZ.png" alt="rupee.jpg" onclick=mineRupees()>
                     <h5 class="text-center text-white p-2 bg-success">Total Rupees: <span id="rupeeCount">0</span></h5>
                 </div>
                 <div class="col-3 mt-3">
                     <h1 class="ml-3">Passives: </h1>
                     <button class="btn btn-success mb-2 btn-block m-3" onclick="buyPassive('goronBracelet')">Goron
                         Bracelet : <span id="goronBracelet">0</span>
-                        <p>------------------------------------------------------------------</p>
+                        <p>-----------------------------------------------------------------</p>
                         <span>Price: 100 Rupees || 10 Rupees per 3 Seconds</span>
                     </button>
                     <button class="btn btn-success mb-2 btn-block m-3" onclick="buyPassive('bombs')">
                         Bombs : <span id="bombs">0</span>
-                        <p>------------------------------------------------------------------</p>
+                        <p>-----------------------------------------------------------------</p>
                         <span>Price: 150 Rupees || 20 Rupees per 3 Seconds</span>
 
                     </button>
                     <button class="btn btn-success mb-2 btn-block m-3" onclick="buyPassive('bunnyHood')">Bunny
                         Hood <span id="bunnyHood">0</span>
-                        <p>------------------------------------------------------------------</p>
+                        <p>-----------------------------------------------------------------</p>
                         <span>Price: 200 || 25 Rupees per 3 Seconds</span>
                     </button>
                     <button class="btn btn-success mb-2 btn-block m-3" onclick="buyPassive('powderKeg')">Powder
                         Keg <span id="powderKeg">0</span>
-                        <p>------------------------------------------------------------------</p>
+                        <p>-----------------------------------------------------------------</p>
                         <span>Price: 250 || 30 Rupees per 3 Seconds</span>
                     </button>
                 </div>
@@ -87,8 +86,8 @@
     <footer>
         <div class="container-fluid bg-success">
             <div class="row">
-                <div class="col-12 text-center text-white p-5">
-                    <h3>Made by Kurtis with 👁👄👁</h3>
+                <div class="col-12 text-center text-white p-5 mt-5">
+                    <h3>Made by Kurtis with 😶‍ ‌</h3>
                 </div>
             </div>
         </div>

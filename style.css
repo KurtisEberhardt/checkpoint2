@@ -5,16 +5,43 @@
 .bg-color{
     background-color: #C3E8BD;
 }
-
-.rupee-green{
-    
+.bg-silver{
+    background-color:#717171;
 }
-.rupee-blue{
-
+.bg-orange{
+    background-color: #c64f0a;
 }
-.rupee-red{
-
+.bg-purple{
+    background-color: #442575
 }
-.rupee-purple{
-
+.bg-red{
+    background-color: #931502
+}
+.bg-yellow{
+    background-color:#8f7d14
+}
+.bg-blue{
+    background-color:#23378d
+}
+.body-blue{
+    background-color: #ced5ff
+}
+.body-yellow{
+    background-color:#fef7c1
+}
+.body-red{
+    background-color:#ff7f7a
+}
+.body-purple{
+    background-color:#dccef2
+}
+.body-orange{
+    background-color:#ffa97b 
+}
+.body-silver{
+    background-color:#fafafa
+}
+.img-size{
+    max-height: 75px;
+    max-width: 75px
 }
